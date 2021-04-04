@@ -224,7 +224,7 @@ TransportistaValidation
     /**
      *
      * @param request usado para proporcionar informacion registrada
-     * @return al formulario inicialñ
+     * @return al formulario inicial
      */
         @RequestMapping("borrarCliente.htm")
     public ModelAndView borrarCliente(HttpServletRequest request ){
