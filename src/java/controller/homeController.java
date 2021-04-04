@@ -21,7 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
- * @author Santiago Mendez
+ * @author Daniel Santiago Niño Mendez
  */
 @Controller
 public class homeController {
@@ -41,7 +41,7 @@ TransportistaValidation
     
     /**
      *
-     * @return
+     * @return un formulario de ingreso
      */
     @RequestMapping(value="formCliente.htm", method=RequestMethod.GET)
     public ModelAndView home(){
@@ -54,7 +54,7 @@ TransportistaValidation
     
     /**
      *
-     * @return
+     * @return un listado de datos registrados en la base de datos
      */
     @RequestMapping(value="formCliente.htm", method=RequestMethod.POST)
     public ModelAndView mostrarCliente(){
@@ -70,7 +70,7 @@ TransportistaValidation
 
     /**
      *
-     * @return
+     * @return un formulario para consultar y enlistar un transportista por nombre
      */
     @RequestMapping(value="formConsultarCliente.htm", method=RequestMethod.GET)
     public ModelAndView listarClientesxNombre(){
@@ -83,10 +83,10 @@ TransportistaValidation
 
     /**
      *
-     * @param cli
-     * @param result
-     * @param status
-     * @return
+     * @param cli usado para enlazar con la lista de datos registrados
+     * @param result se usa para validar los resultados que se esperan
+     * @param status usado para limpiar la sesion en caso de que no hayan errores 
+     * @return una lista por el nombre de los datos registrados
      */
     @RequestMapping(value="formConsultarCliente.htm", method=RequestMethod.POST)
     public ModelAndView listarClientesxNombre(
@@ -108,7 +108,7 @@ TransportistaValidation
 
     /**
      *
-     * @return
+     * @return un formulario para ingresar un nuevo registro
      */
         @RequestMapping(value="agregarCliente.htm", method=RequestMethod.GET)
     public ModelAndView cargarCliente(){
@@ -121,10 +121,10 @@ TransportistaValidation
     
     /**
      *
-     * @param cli
-     * @param result
-     * @param status
-     * @return
+    * @param cli usado para enlazar con la lista de datos registrados
+     * @param result se usa para validar los resultados que se esperan
+     * @param status usado para limpiar la sesion en caso de que no hayan errores
+     * @return al formulario de inicio
      */
     @RequestMapping(value="agregarCliente.htm", method=RequestMethod.POST)
     public ModelAndView agregarCliente(
@@ -171,8 +171,8 @@ TransportistaValidation
 
     /**
      *
-     * @param request
-     * @return
+     * @param request usado para proporcionar informacion registrada
+     * @return un formulario con los datos registrados para su actualizacion
      */
     
     
@@ -188,10 +188,10 @@ TransportistaValidation
 
     /**
      *
-     * @param cli
-     * @param result
-     * @param status
-     * @return
+     * @param cli usado para enlazar con la lista de datos registrados
+     * @param result se usa para validar los resultados que se esperan
+     * @param status usado para limpiar la sesion en caso de que no hayan errores
+     * @return al formulario inicial
      */
     @RequestMapping(value="actCliente.htm", method=RequestMethod.POST)
         public ModelAndView actCliente(
@@ -223,8 +223,8 @@ TransportistaValidation
 
     /**
      *
-     * @param request
-     * @return
+     * @param request usado para proporcionar informacion registrada
+     * @return al formulario inicialñ
      */
         @RequestMapping("borrarCliente.htm")
     public ModelAndView borrarCliente(HttpServletRequest request ){
@@ -238,8 +238,8 @@ TransportistaValidation
 
     /**
      *
-     * @param id
-     * @return
+     * @param id usado para obtener los datos que se van a actualizar
+     * @return los datos a actualizar
      */
     public Transportista cargarClientebyId(int id){
 final Transportista cli= new Transportista();
@@ -259,7 +259,7 @@ return cli;
 
     /**
      *
-     * @return
+     * @return una lista de los datos consultados
      */
     @RequestMapping(value="listar.htm", method=RequestMethod.GET)
     public ModelAndView listarClientesxId(){
