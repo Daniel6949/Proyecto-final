@@ -29,6 +29,7 @@ public class TransportistaTest {
      */
     @BeforeClass
     public static void setUpClass() {
+        System.out.println("inicio del test principal");
     }
     
     /**
@@ -36,6 +37,7 @@ public class TransportistaTest {
      */
     @AfterClass
     public static void tearDownClass() {
+        System.out.println("fin del test principal");
     }
     
     /**
@@ -43,6 +45,7 @@ public class TransportistaTest {
      */
     @Before
     public void setUp() {
+        System.out.println("mientras inicia el  test");
     }
     
     /**
@@ -50,6 +53,7 @@ public class TransportistaTest {
      */
     @After
     public void tearDown() {
+        System.out.println("finaliza el test");
     }
 
     /**
