@@ -2,7 +2,7 @@ package models;
 
 /**
  *
- * @author Santiago Mendez
+ * @author Daniel Santiago Niño Mendez
  */
 public class Transportista {
     private int Id;
@@ -19,11 +19,11 @@ public class Transportista {
 
     /**
      *
-     * @param Id
-     * @param placa
-     * @param nombre
-     * @param apellido
-     * @param telefono
+     * @param Id usado para registrar, borrar, actualizar y consultar datos en la BD
+     * @param placa usado para registrar, borrar, actualizar y consultar datos en la BD
+     * @param nombre usado para registrar, borrar, actualizar y consultar datos en la BD
+     * @param apellido usado para registrar, borrar, actualizar y consultar datos en la BD
+     * @param telefono usado para registrar, borrar, actualizar y consultar datos en la BD
      */
     public Transportista(int Id, String placa, String nombre, String apellido, String telefono) {
         this.Id=Id;
@@ -35,7 +35,7 @@ public class Transportista {
 
     /**
      *
-     * @return
+     * @return Id
      */
     public int getId() {
         return Id;
@@ -51,7 +51,7 @@ public class Transportista {
 
     /**
      *
-     * @return
+     * @return Placa
      */
     public String getPlaca() {
         return Placa;
@@ -67,7 +67,7 @@ public class Transportista {
 
     /**
      *
-     * @return
+     * @return Nombre
      */
     public String getNombre() {
         return Nombre;
@@ -83,7 +83,7 @@ public class Transportista {
 
     /**
      *
-     * @return
+     * @return Apellido
      */
     public String getApellido() {
         return Apellido;
@@ -99,7 +99,7 @@ public class Transportista {
 
     /**
      *
-     * @return
+     * @return Telefono
      */
     public String getTelefono() {
         return Telefono;
