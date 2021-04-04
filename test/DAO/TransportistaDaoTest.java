@@ -13,7 +13,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.Ignore;
 
 /**
  *
@@ -21,36 +20,21 @@ import org.junit.Ignore;
  */
 public class TransportistaDaoTest {
     
-    /**
-     *
-     */
     public TransportistaDaoTest() {
     }
     
-    /**
-     *
-     */
     @BeforeClass
     public static void setUpClass() {
     }
     
-    /**
-     *
-     */
     @AfterClass
     public static void tearDownClass() {
     }
     
-    /**
-     *
-     */
     @Before
     public void setUp() {
     }
     
-    /**
-     *
-     */
     @After
     public void tearDown() {
     }
@@ -94,49 +78,6 @@ public class TransportistaDaoTest {
         TransportistaDao instance = new TransportistaDao();
         List expResult = instance.mostrarCliente();
         List result = instance.mostrarCliente();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of agregarCliente method, of class TransportistaDao.
-     */
-    @Ignore
-    public void testAgregarCliente() {
-        System.out.println("agregarCliente");
-        int id = 0;
-        TransportistaDao instance = new TransportistaDao();
-        List expResult = instance.agregarCliente(id);
-        List result = instance.agregarCliente(id);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of actCliente method, of class TransportistaDao.
-     */
-    @Ignore
-    public void testActCliente() {
-        System.out.println("actCliente");
-        TransportistaDao instance = new TransportistaDao();
-        List expResult = instance.actCliente();
-        List result = instance.actCliente();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of borrarCliente method, of class TransportistaDao.
-     */
-    @Ignore
-    public void testBorrarCliente() {
-        System.out.println("borrarCliente");
-        TransportistaDao instance = new TransportistaDao();
-        List expResult = instance.borrarCliente();
-        List result = instance.borrarCliente();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
