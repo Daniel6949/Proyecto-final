@@ -6,7 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
  *
- * @author Santiago Mendez
+ * @author Daniel Santiago Niño Mendez
  */
 public class TransportistaDao {
     JdbcTemplate jdbcTemplate;
@@ -14,8 +14,8 @@ public class TransportistaDao {
     
     /**
      *
-     * @param id
-     * @return
+     * @param id se utilizara en este metodo
+     * @return devuelve una lista llamada cli con la informacion de la base de datos
      */
     public List consultarClienteById(int id){
     List cli= new ArrayList();
@@ -27,8 +27,8 @@ public class TransportistaDao {
 
     /**
      *
-     * @param nombre
-     * @return
+     * @param nombre lo utilizaremos en este metodo de consulta
+     * @return devuelve la listaconsultada por el nombre
      */
     public List consultarClienteByNombre(String nombre){
     List cli = new ArrayList();
@@ -40,7 +40,7 @@ public class TransportistaDao {
 
     /**
      *
-     * @return
+     * @return devuelve una lista completa de la base de datos
      */
     public List mostrarCliente( ){
     List cli = new ArrayList();
@@ -54,8 +54,8 @@ public class TransportistaDao {
      
     /**
      *
-     * @param id
-     * @return
+     * @param id se usara para agregar un registro con su respectiva identificacion
+     * @return  una lista de registros con una identificacion predeterminada
      */
     public List cargarClientebyId(int id){
     List cli= new ArrayList();
