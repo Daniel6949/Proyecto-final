@@ -11,7 +11,7 @@ public class ConectarDB {
 
     /**
      *
-     * @return devuelve la base de datosque solicitamos
+     * @return devuelve la base de datos que solicitamos
      * 
      */
     public DriverManagerDataSource conectar (){
