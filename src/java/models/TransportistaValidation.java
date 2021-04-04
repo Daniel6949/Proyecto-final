@@ -6,7 +6,7 @@ import org.springframework.validation.Validator;
 
 /**
  *
- * @author Santiago Mendez
+ * @author Daniel Santiago Niño Mendez
  */
 public class TransportistaValidation implements Validator{
 
