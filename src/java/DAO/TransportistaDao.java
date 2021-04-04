@@ -50,42 +50,7 @@ public class TransportistaDao {
         return cli;
     }
 
-    /**
-     *
-     * @param id
-     * @return
-     */
-    public List agregarCliente(int id){
-    List cli= new ArrayList();
-    this.jdbcTemplate = new JdbcTemplate(con.conectar());
-    String sql = "insert into transportista (id,placa,nombre,apellido,telefono) values (?,?,?,?,?) ";
-    cli = this.jdbcTemplate.queryForList(sql,id);
-    return cli;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public List actCliente(){
-    List cli= new ArrayList();
-    this.jdbcTemplate = new JdbcTemplate(con.conectar());
-   String sql = "UPDATE transportista SET id = ?, placa = ?, nombre = ? , apellido = ? ,telefono = ?" + "WHERE id = ? "; 
-    cli = this.jdbcTemplate.queryForList(sql);
-    return cli;
-    }
-     
-    /**
-     *
-     * @return
-     */
-    public List borrarCliente(){
-    List cli= new ArrayList();
-    this.jdbcTemplate = new JdbcTemplate(con.conectar());
-    String sql = "delete from transportista where id = ? ";
-    cli = this.jdbcTemplate.queryForList(sql);
-    return cli;
-    }
+   
      
     /**
      *
