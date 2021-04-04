@@ -4,13 +4,15 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 /**
  *
- * @author Santiago Mendez
+ * @author Daniel Santiago Niño Mendez
+ * 
  */
 public class ConectarDB {
 
     /**
      *
-     * @return
+     * @return devuelve la base de datosque solicitamos
+     * 
      */
     public DriverManagerDataSource conectar (){
         DriverManagerDataSource datasource = new DriverManagerDataSource();
