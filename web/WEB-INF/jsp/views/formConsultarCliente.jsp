@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@include file="cabecera.jsp" %>
-<h1>Consultar Clientes...</h1>
+<h1>Consultar Transportistas...</h1>
 <div class="content">
     <form:form cssClass="navbar-form" method="post" commandName="transportista">
         <form:errors path="*" element="div" cssClass="alert alert-danger"/>
