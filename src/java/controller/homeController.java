@@ -43,7 +43,8 @@ TransportistaValidation
      *
      * @return un formulario de ingreso
      */
-    @RequestMapping(value="formCliente.htm", method=RequestMethod.GET)
+ 
+ @RequestMapping(value="formCliente.htm", method=RequestMethod.GET)
     public ModelAndView home(){
         ModelAndView mav = new ModelAndView();
         Transportista transportista = new Transportista();        
@@ -54,9 +55,9 @@ TransportistaValidation
     
     /**
      *
-     * @return un listado de datos registrados en la base de datos
+     * @return
      */
-    @RequestMapping(value="formCliente.htm", method=RequestMethod.POST)
+@RequestMapping(value="formCliente.htm", method=RequestMethod.POST)
     public ModelAndView mostrarCliente(){
         ModelAndView mav = new ModelAndView();
         String sql = "select * from transportista";
@@ -67,7 +68,6 @@ TransportistaValidation
         mav.setViewName("views/mostrarCliente");
         return mav;
     }
-
     /**
      *
      * @return un formulario para consultar y enlistar un transportista por nombre

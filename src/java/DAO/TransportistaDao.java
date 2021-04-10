@@ -12,6 +12,7 @@ public class TransportistaDao {
     JdbcTemplate jdbcTemplate;
     ConectarDB con = new ConectarDB();
     
+    
     /**
      *
      * @param id se utilizara en este metodo
